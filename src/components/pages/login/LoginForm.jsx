@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 
+/**
+ * Render a login form that greets the user and clears the input when submitted.
+ *
+ * The component renders a controlled text input with French UI text and a required
+ * placeholder. Submitting the form displays an alert with "Bonjour {name}" and
+ * resets the input value to an empty string.
+ *
+ * @returns {JSX.Element} A React element containing the login form.
+ */
 export default function LoginForm() {
   // state
   const [inputValue, setInputValue] = useState("");
