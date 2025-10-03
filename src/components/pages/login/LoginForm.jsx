@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function LoginPage() {
+export default function LoginForm() {
   // state
   const [inputValue, setInputValue] = useState("");
   // comportements
@@ -13,14 +13,12 @@ export default function LoginPage() {
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
-
-  // affichage
   return (
     <div>
-      <h1>Bienvenue chez nous</h1>
-      <br />
-      <h2>Connectez-vous</h2>
       <form action="submit" onSubmit={handleSubmit}>
+        <h1>Bienvenue chez nous</h1>
+        <br />
+        <h2>Connectez-vous</h2>
         <input
           value={inputValue}
           onChange={handleChange}
